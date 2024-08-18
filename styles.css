@@ -1,0 +1,58 @@
+
+.rss-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.rss-card {
+    flex: 1 1 calc(33.333% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px; 
+    overflow: hidden;
+}
+
+.rss-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    text-align: center;
+    height: 3em;
+    overflow: hidden;
+}
+
+.rss-card p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    height: 3em; 
+    overflow: hidden;
+    text-align: justify;
+}
+
+.rss-card a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+/* Additional styling for images */
+.rss-card img {
+    max-width: 100%;
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Ensuring only 2 rows with 3 elements each */
+.rss-card-container > .rss-card:nth-child(n+7) {
+    display: none;
+}
