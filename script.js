@@ -41,7 +41,7 @@ async function fetchRSSFeed() {
                 img.style.objectFit = 'cover';
             });
         } else {
-            tempDiv.querySelectorAll('br').forEach(br => br.remove()); // Remove empty <br> tags if no image
+            tempDiv.querySelectorAll('br').forEach(br => br.remove()); 
         }
 
         card.innerHTML = `
